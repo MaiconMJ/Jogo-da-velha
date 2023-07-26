@@ -7,7 +7,7 @@
   --bg-color: #212529;
   --border-color: #666;
   --font-color: #f1f5f9;
-  --primary-color: #914dff;
+  --primary-color: #274c43;
   --error-color: #ff0043;
 }
 body {
@@ -58,14 +58,14 @@ header {
 .startButton {
   font-family: 'Fredericka the Great', cursive;
   font-size: 1.1rem;
-  border-color: #914dff;
+  border-color: var(--primary-color);
   color: #fff;
-  box-shadow: 0 0 40px 40px #914dff inset, 0 0 0 0 #914dff;
+  box-shadow: 0 0 40px 40px var(--primary-color) inset, 0 0 0 0 var(--primary-color);
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
 .startButton:hover {
-  box-shadow: 0 0 10px 0 #914dff inset, 0 0 10px 4px #914dff;
+  box-shadow: 0 0 10px 0 var(--primary-color) inset, 0 0 10px 4px var(--primary-color);
 }
 .players-input {
   display:flex;
