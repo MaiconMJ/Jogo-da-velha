@@ -15,6 +15,7 @@ body {
   font-size: 1.5rem;
   background-color: var(--bg-color);
   color: var(--font-color);
+  background: url();
 }
 
 header {
@@ -55,6 +56,8 @@ header {
   outline: 0;
 }
 .startButton {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.1rem;
   border-color: #914dff;
   color: #fff;
   box-shadow: 0 0 40px 40px #914dff inset, 0 0 0 0 #914dff;
