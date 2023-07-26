@@ -1,4 +1,3 @@
-// Variáveis globais úteis
 const boardRegions = document.querySelectorAll('#gameBoard span')
 let vBoard = []
 let turnPlayer = ''
@@ -9,13 +8,13 @@ function updateTitle() {
 }
 
 function initializeGame() {
-  // Inicializa as variáveis globais
+
   vBoard = [['', '', ''], ['', '', ''], ['', '', '']]
   turnPlayer = 'player1'
-  // Ajusta o título da página (caso seja necessário)
+
   document.querySelector('h2').innerHTML = 'Vez de: <span id="turnPlayer"></span>'
   updateTitle()
-  // Limpa o tabuleiro (caso seja necessário) e adiciona os eventos clique
+ 
   boardRegions.forEach(function (element) {
     element.classList.remove('win')
     element.innerText = ''
@@ -24,7 +23,6 @@ function initializeGame() {
   })
 }
 
-//Verifica se existem três regiões iguais em sequência e devolve as regiões
 function getWinRegions() {
   const winRegions = []
   if (vBoard[0][0] && vBoard[0][0] === vBoard[0][1] && vBoard[0][0] === vBoard[0][2])
@@ -46,30 +44,26 @@ function getWinRegions() {
   return winRegions
 }
 
-// Desabilita uma região do tabuleiro para que não seja mais clicável
 function disableRegion(element) {
   element.classList.remove('cursor-pointer')
   element.removeEventListener('click', handleBoardClick)
 }
 
-// Pinta as regiões onde o jogador venceu e mostra seu nome na tela
 function handleWin(regions) {
   regions.forEach(function (region) {
     document.querySelector('[data-region="' + region + '"]').classList.add('win')
   })
   const playerName = document.getElementById(turnPlayer).value
-  document.querySelector('h2').innerHTML = playerName + ' venceu!'
+  document.querySelector('h2').innerHTML = playerName + ' venceu! '
 }
 
 function handleBoardClick(ev) {
-  // Obtém os índices da região clicada
   const span = ev.currentTarget
   const region = span.dataset.region // N.N
   const rowColumnPair = region.split('.') // ["N", "N"]
   const row = rowColumnPair[0]
   const column = rowColumnPair[1]
   
-  // Marca a região clicada com o símbolo do jogador
   if (turnPlayer === 'player1') {
     span.innerText = 'X'
     vBoard[row][column] = 'X'
@@ -78,14 +72,11 @@ function handleBoardClick(ev) {
     vBoard[row][column] = 'O'
   }
 
-  // Limpa o console e exibe o tabuleiro virtual
   console.clear()
   console.table(vBoard)
   
-  // Desabilita a região clicada
   disableRegion(span)
 
-  //Verifica se alguém venceu
   const winRegions = getWinRegions()
   if (winRegions.length > 0) {
     handleWin(winRegions)
@@ -97,6 +88,5 @@ function handleBoardClick(ev) {
   }
 }
 
-// Adiciona o evento no botão que inicia o jogo
 document.getElementById('start').addEventListener('click', initializeGame)
 
