@@ -11,10 +11,11 @@
   --error-color: #ff0043;
 }
 body {
-  font-family: sans-serif;
+  font-family: 'Fredericka the Great', cursive;
   background-color: var(--bg-color);
   color: var(--font-color);
 }
+
 header {
   display:flex;
   align-items: center;
@@ -45,7 +46,7 @@ header {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   font-weight: 700;
 }
 .btn:hover, .btn:focus {
