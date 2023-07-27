@@ -119,9 +119,9 @@ section {
   font-size: 100px;
   cursor: pointer;
 }
-.cursor-pointer:hover {
+/* .cursor-pointer:hover {
   filter: brightness(0.7);
-}
+} */
 .region-0, .region-3 {
   border-right: solid 1px;
   border-bottom: solid 1px;
