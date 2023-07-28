@@ -121,14 +121,9 @@ section {
   border-right: solid 1px;
   border-bottom: solid 1px;
 }
-.region-1, .region-4  {
+.region-1, .region-4, .region-2, .region-5  {
   border-bottom: solid 1px;
   border-left: solid 1px;
-
-}
-.region-2, .region-5 {
-  border-left: solid 1px;
-  border-bottom: solid 1px;
 }
 .region-6 {
   border-right: solid 1px;
