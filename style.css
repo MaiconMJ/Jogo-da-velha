@@ -134,4 +134,30 @@ section {
     display: flex;
     flex-direction: column;
   }
+  label {
+    margin-left: 6px;
+  }
+  .players-input {
+    display: flex;
+    justify-content: space-between;
+  }
+  #player1, #player2 {
+    width: 38%;
+  }
+  #player1::placeholder {
+    font-size: 1rem;
+  }
+  #player2::placeholder {
+    font-size: 1rem;
+  }
+  h2 {
+    margin-top: 5px;
+  }
+ #start {
+  margin: 5px;
+  font-size: .8rem;
+ }
+ #gameBoard {
+  height: 62vh;
+ }
 }
