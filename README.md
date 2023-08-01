@@ -14,7 +14,7 @@
 
 ###
 
-<p align="left">Recebe o nome de dois jogadores;<br>Mostra o resultado da partida;</p>
+<p align="left">Recebe o nome de dois jogadores;<br>Mostra o resultado da partida;<br>Projeto possui responsividade com dispositivos mobile</p>
 
 ###
 
@@ -41,6 +41,10 @@
 ###
 
 ###
+
+<p align="left">Mobile: </p>
+
+##
 
 <div align="left">
   <img height="350" src="https://i.imgur.com/HO4wklB.png"  />
