@@ -3,11 +3,13 @@
   margin: 0;
   padding: 0;
 }
+
 :root {
   --font-color: #f1f5f9;
   /* --primary-color: #274c43; */
   --primary-color: white;
 }
+
 body {
   font-family: 'Fredericka the Great', cursive;
   font-size: 1.5rem;
@@ -17,15 +19,16 @@ body {
 }
 
 header {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-around;
 }
+
 .btn {
   box-sizing: border-box;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: transparent;
   border: 2px solid #e74c3c;
   border-radius: 0.6em;
@@ -36,8 +39,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
@@ -48,10 +51,13 @@ header {
   text-transform: uppercase;
   font-weight: 700;
 }
-.btn:hover, .btn:focus {
+
+.btn:hover,
+.btn:focus {
   color: #fff;
   outline: 0;
 }
+
 .startButton {
   font-family: 'Fredericka the Great', cursive;
   font-size: 1.1rem;
@@ -60,15 +66,19 @@ header {
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
+
 .startButton:hover {
   box-shadow: 0 0 10px 0 var(--primary-color) inset, 0 0 10px 4px var(--primary-color);
 }
+
 .players-input {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-#player1, #player2  {
+
+#player1,
+#player2 {
   background-color: transparent;
   border: 1px solid;
   border-radius: .5rem;
@@ -79,20 +89,24 @@ header {
   text-align: center;
   width: 20%;
 }
+
 h2 {
   display: flex;
   justify-content: center;
   margin: 1rem;
 }
+
 #turnPlayer {
   margin-left: .5rem;
 }
+
 section {
   display: block;
   margin: 0 auto;
   max-width: 35rem;
   padding: 0 1.5rem 2.5rem;
 }
+
 #gameBoard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -100,31 +114,41 @@ section {
   height: 60vh;
   /* gap: .5rem; */
 }
+
 #gameBoard span {
   background-color: transparent;
   display: grid;
   place-content: center;
   font-size: 5rem;
 }
+
 #gameBoard span.win {
   background-color: #39e85f;
 }
+
 .cursor-pointer {
   font-size: 100px;
   cursor: pointer;
 }
 
-.region-0, .region-3 {
+.region-0,
+.region-3 {
   border-right: solid 1px;
   border-bottom: solid 1px;
 }
-.region-1, .region-4, .region-2, .region-5  {
+
+.region-1,
+.region-4,
+.region-2,
+.region-5 {
   border-bottom: solid 1px;
   border-left: solid 1px;
 }
+
 .region-6 {
   border-right: solid 1px;
 }
+
 .region-8 {
   border-left: solid 1px;
 }
@@ -134,30 +158,36 @@ section {
     display: flex;
     flex-direction: column;
   }
+
   label {
     margin-left: 6px;
   }
+
   .players-input {
     display: flex;
     justify-content: space-between;
   }
-  #player1, #player2 {
+
+  #player1,
+  #player2 {
     width: 38%;
   }
+
   #player1::placeholder {
     font-size: 1rem;
   }
+
   #player2::placeholder {
     font-size: 1rem;
   }
+
   h2 {
     margin-top: 5px;
   }
- #start {
-  margin: 5px;
-  font-size: .8rem;
- }
- /* #gameBoard {
-  height: 60vh;
- } */
+
+  #start {
+    margin: 5px;
+    font-size: .8rem;
+  }
+
 }
