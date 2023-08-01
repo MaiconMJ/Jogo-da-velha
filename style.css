@@ -97,7 +97,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  height: 64vh;
+  height: 60vh;
   /* gap: .5rem; */
 }
 #gameBoard span {
@@ -157,7 +157,7 @@ section {
   margin: 5px;
   font-size: .8rem;
  }
- #gameBoard {
-  height: 62vh;
- }
+ /* #gameBoard {
+  height: 60vh;
+ } */
 }
